@@ -20,7 +20,7 @@ int main()
             }
             else
             {
-                for (int i = 0; i < list.size(); i++)
+                for (size_t i = 0; i < list.size(); i++)
                 {
                     cout << "Element " << i << " in list is " << list[i] << endl;
                 }
