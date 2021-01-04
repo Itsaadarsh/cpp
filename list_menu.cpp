@@ -2,6 +2,21 @@
 #include <vector>
 using namespace std;
 
+void p_func(const vector<int> &ele)
+{
+    if (ele.size() == 0)
+    {
+        cout << "List is empty" << endl;
+    }
+    else
+    {
+        for (size_t i = 0; i < ele.size(); i++)
+        {
+            cout << "Element " << i << " in list is " << ele[i] << endl;
+        }
+    }
+}
+
 int main()
 {
     char ip{};
@@ -14,17 +29,7 @@ int main()
 
         if (ip == 'P' || ip == 'p')
         {
-            if (list.size() == 0)
-            {
-                cout << "List is empty" << endl;
-            }
-            else
-            {
-                for (size_t i = 0; i < list.size(); i++)
-                {
-                    cout << "Element " << i << " in list is " << list[i] << endl;
-                }
-            }
+            p_func(list);
         }
 
         if (ip == 'A' || ip == 'a')
